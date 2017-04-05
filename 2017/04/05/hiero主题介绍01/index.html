@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+ <!-- upgrade non-https to https  
+
+-->
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+  
+  <title>hiero主题介绍01 | 万码堂</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  
+  
+  
+  <meta name="description" content="我们进入根目录下面的theme目录，然后进入hiero主题目，执行下面脚本生成树形文件目录结构1find . -print|egrep -v &amp;apos;\.git|\.travis.yml&amp;apos; | sed -e &amp;apos;s;[^/]*/;|____;g;s;____|; |;g&amp;apos;
+1234567891011121314151617181920212223242526272">
+<meta property="og:type" content="article">
+<meta property="og:title" content="hiero主题介绍01">
+<meta property="og:url" content="https://code10000.com/2017/04/05/hiero主题介绍01/index.html">
+<meta property="og:site_name" content="万码堂">
+<meta property="og:description" content="我们进入根目录下面的theme目录，然后进入hiero主题目，执行下面脚本生成树形文件目录结构1find . -print|egrep -v &amp;apos;\.git|\.travis.yml&amp;apos; | sed -e &amp;apos;s;[^/]*/;|____;g;s;____|; |;g&amp;apos;
+1234567891011121314151617181920212223242526272">
+<meta property="og:updated_time" content="2017-04-05T16:52:38.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="hiero主题介绍01">
+<meta name="twitter:description" content="我们进入根目录下面的theme目录，然后进入hiero主题目，执行下面脚本生成树形文件目录结构1find . -print|egrep -v &amp;apos;\.git|\.travis.yml&amp;apos; | sed -e &amp;apos;s;[^/]*/;|____;g;s;____|; |;g&amp;apos;
+1234567891011121314151617181920212223242526272">
+  
+    <link rel="alternate" href="/atom.xml" title="万码堂" type="application/atom+xml">
+  
+  <link rel="icon" href="/css/images/favicon.ico">
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Montserrat:700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic" rel="stylesheet" type="text/css">
+  <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+  <style type="text/css">
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/9749f0/00000000000000000001008f/27/l?subset_id=2&fvd=n5) format("woff2");font-weight:500;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/90cf9f/000000000000000000010091/27/l?subset_id=2&fvd=n7) format("woff2");font-weight:500;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/8a5494/000000000000000000013365/27/l?subset_id=2&fvd=n4) format("woff2");font-weight:lighter;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/d337d8/000000000000000000010095/27/l?subset_id=2&fvd=i4) format("woff2");font-weight:400;font-style:italic;}</style>
+    
+  <link rel="stylesheet" id="athemes-headings-fonts-css" href="//fonts.googleapis.com/css?family=Yanone+Kaffeesatz%3A200%2C300%2C400%2C700&amp;ver=4.6.1" type="text/css" media="all">
+  <link rel="stylesheet" href="/css/style.css">
+
+  <script src="/js/jquery-3.1.1.min.js"></script>
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="/css/bootstrap.css" >
+  <link rel="stylesheet" href="/css/hiero.css" >
+  <link rel="stylesheet" href="/css/glyphs.css" >
+
+</head>
+
+
+
+  <body data-spy="scroll" data-target="#toc" data-offset="50">
+
+
+  <header id="allheader" class="site-header" role="banner">
+  <div class="clearfix container">
+      <div class="site-branding">
+
+          <h1 class="site-title">
+            
+              <a href="/" title="万码堂" rel="home"> 万码堂 </a>
+            
+          </h1>
+
+          
+            <div class="site-description">读万卷书，写万行代码</div>
+          
+            
+          <nav id="main-navigation" class="main-navigation" role="navigation">
+            <a class="nav-open">Menu</a>
+            <a class="nav-close">Close</a>
+            <div class="clearfix sf-menu">
+
+              <ul id="main-nav" class="nmenu sf-js-enabled">
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/">首页</a> </li>
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/archives">归档</a> </li>
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/categories">分类</a> </li>
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/tags">标签</a> </li>
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/about">关于</a> </li>
+                    
+              </ul>
+            </div>
+          </nav>
+
+
+      </div>
+  </div>
+</header>
+
+
+
+
+  <div id="container">
+    <div id="wrap">
+            
+      <div id="content" class="outer">
+        
+          <section id="main" style="float:none;"><article id="blog-hiero主题介绍01" style="width: 66%; float:left;" class="article article-type-blog" itemscope itemprop="blogPost" >
+  <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" class="article-title" itemprop="name">
+      hiero主题介绍01
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	Posted on <a href="/2017/04/05/hiero主题介绍01/" class="article-date">
+	  <time datetime="2017-04-05T15:12:25.000Z" itemprop="datePublished">四月 5, 2017</time>
+	</a>
+
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p> 我们进入根目录下面的theme目录，然后进入hiero主题目，执行下面脚本生成树形文件目录结构<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">find . -print|egrep -v &apos;\.git|\.travis.yml&apos; | sed -e &apos;s;[^/]*/;|____;g;s;____|; |;g&apos;</div></pre></td></tr></table></figure></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div></pre></td><td class="code"><pre><div class="line">.</div><div class="line">|_____config.yml</div><div class="line">|____Gruntfile.js</div><div class="line">|____languages      ##语言配置，默认英文，还有中文，德文，其他</div><div class="line">| |____default.yml  </div><div class="line">| |____en.yml</div><div class="line">| |____zh-CN.yml</div><div class="line">| |____...</div><div class="line">|____layout        ##主题显示布局，主要有两种：_partial 与 _widget</div><div class="line">| |_____partial    ##页面布局的分块，所以叫做partial吧，局部分块的意思,页面显示的主要模块：头部，底部，文章内容区域，评论区域，导航条等</div><div class="line">| | |____after-footer.ejs</div><div class="line">| | |____article.ejs</div><div class="line">| | |____comment.ejs</div><div class="line">| | |____footer.ejs</div><div class="line">| | |____head.ejs</div><div class="line">| | |____...</div><div class="line">| | |____post      ##位于分块下，这里_post管理了一篇文章内容之外的其他部分：类比条，标签条，标题条，导航条，日期条...</div><div class="line">| | | |____category.ejs</div><div class="line">| | | |____date.ejs</div><div class="line">| | | |____nav.ejs</div><div class="line">| | | |____tag.ejs</div><div class="line">| | | |____title.ejs</div><div class="line">| | |____sidebar.ejs</div><div class="line">| | |____tencent-analytics.ejs</div><div class="line">| |_____widget    ##页面挂载的小部件，比如社交信息部件，分类部件，外链模块， 标签云部件，搜索部件。主要都是跟博客文章内容布局相关不大的模块。</div><div class="line">| | |____archive.ejs</div><div class="line">| | |____links.ejs</div><div class="line">| | |____search.ejs</div><div class="line">| | |____social.ejs</div><div class="line">| | |____tag.ejs</div><div class="line">| | |____...</div><div class="line">| |____archive.ejs</div><div class="line">| |____categories.ejs</div><div class="line">| |____category.ejs</div><div class="line">| |____index.ejs   ##网站首页布局</div><div class="line">| |____layout.ejs  ##内容页面布局</div><div class="line">| |____page.ejs</div><div class="line">| |____post.ejs</div><div class="line">| |____search      ##搜索部件布局</div><div class="line">| | |____baidu.ejs</div><div class="line">| | |____index-mobile.ejs</div><div class="line">| | |____index.ejs</div><div class="line">| | |____insight.ejs</div><div class="line">| | |____swiftype.ejs</div><div class="line">| |____tag.ejs     ##标签页面布局</div><div class="line">| |____tags.ejs</div><div class="line">|____LICENSE</div><div class="line">|____package.json  ##node项目定义文件</div><div class="line">|____README.cn.md  ##node项目中文说明</div><div class="line">|____README.md     ##node项目英文说明</div><div class="line">|____scripts       ##依赖的一些脚本</div><div class="line">| |____fancybox.js</div><div class="line">| |____hierarchical-categories.js</div><div class="line">|____source        ##这里跟后端开发项目的理解不一样，前端项目中的source用来管理样式文件，图片，字体等</div><div class="line">| |____css         ##页面分块等样子，引用字体，图片等</div><div class="line">| | |_____extend.styl</div><div class="line">| | |_____partial</div><div class="line">| | |_____util</div><div class="line">| | |_____variables.styl</div><div class="line">| | |____fonts</div><div class="line">| | | |____athemes-glyphs.woff</div><div class="line">| | | |____fontawesome-webfont.eot</div><div class="line">| | | |____...</div><div class="line">| | |____hiero.css  ##hiero主题样式</div><div class="line">| | |____images     ##网站icon</div><div class="line">| | | |____favicon.ico</div><div class="line">| | | |____pose.jpg</div><div class="line">| | | |____rocket.png</div><div class="line">| | |____...</div><div class="line">| |____fancybox     ##优秀的弹出框Jquery插件</div><div class="line">| |____js           ##主题引用等一些脚本</div><div class="line">| | |____bootstrap.js</div><div class="line">| | |____insight.js</div><div class="line">| | |____jquery-3.1.1.min.js</div><div class="line">| | |____main.js</div><div class="line">| | |____script.js</div><div class="line">| | |____...</div><div class="line">| |____preview      ## hiero 一些页面等展示图（效果预览图）</div></pre></td></tr></table></figure>
+
+      
+    </div>
+    <footer class="entry-meta entry-footer">
+      
+      
+      
+        
+	<div id="comment">
+	<!-- 云跟贴评论框 start -->
+<div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>
+<script src="https://img1.cache.netease.com/f2e/tie/yun/sdk/loader.js"></script>
+<script>
+var cloudTieConfig = {
+	url: document.location.href,
+	sourceId: "",
+	productKey: "30f204fa628d4eefb5bd107c065147dc",
+	target: "cloud-tie-wrapper"
+};
+var yunManualLoad = true;
+Tie.loader("aHR0cHM6Ly9hcGkuZ2VudGllLjE2My5jb20vcGMvbGl2ZXNjcmlwdC5odG1s", true);
+</script>
+	<!-- 云跟贴公共JS代码 end -->
+
+	</div>
+	<link rel="stylesheet" href="/css/comment.css">
+
+
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2017/04/02/hiero主题使用剖析/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">下一篇</strong>
+      <div class="article-nav-title">hiero主题使用剖析</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+<!-- Table of Contents -->
+
+  <aside id="sidebar">
+    <div id="toc" class="toc-article">
+    <strong class="toc-title">文章目录</strong>
+    
+      <ol class="nav">无</ol>
+    
+    </div>
+  </aside>
+
+</section>
+        
+      </div>
+      <footer id="footer" class="site-footer">
+  
+
+  <div class="clearfix container">
+      <div class="site-info">
+	      &copy; 2017 万码堂 All Rights Reserved.
+      </div>
+      <div class="site-credit">
+        Theme by <a href="https://github.com/iTimeTraveler/hexo-theme-hiero" target="_blank">hiero</a>
+      </div>
+  </div>
+</footer>
+
+
+<!-- min height -->
+
+<script>
+    var contentdiv = document.getElementById("content");
+
+    contentdiv.style.minHeight = document.body.offsetHeight - document.getElementById("allheader").offsetHeight - document.getElementById("footer").offsetHeight + "px";
+</script>
+    </div>
+    <!-- <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+    <a href="/categories" class="mobile-nav-link">Categories</a>
+  
+    <a href="/tags" class="mobile-nav-link">Tags</a>
+  
+    <a href="/about" class="mobile-nav-link">About</a>
+  
+</nav> -->
+    
+<div style="display: none;">
+  <script src="https://s11.cnzz.com/z_stat.php?id=1260716016&web_id=1260716016" language="JavaScript"></script>
+</div>
+
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+<script src="/js/bootstrap.js"></script>
+<script src="/js/main.js"></script>
+
+
+
+
+
+  </div>
+
+  <a id="rocket" href="#top" class=""></a>
+  <script type="text/javascript" src="/js/totop.js" async=""></script>
+  
+
+  <div style="display: none;">
+    <script src="https://s95.cnzz.com/z_stat.php?id=1260716016&web_id=1260716016" language="JavaScript"></script>
+  </div>
+
+
+</body>
+</html>

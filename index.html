@@ -105,6 +105,47 @@
         
           <section id="main">
   
+    <article id="blog-hiero主题介绍01"  class="article article-type-blog" itemscope itemprop="blogPost" >
+  <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" itemprop="name">
+      <a class="article-title" href="/2017/04/05/hiero主题介绍01/">hiero主题介绍01</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	Posted on <a href="/2017/04/05/hiero主题介绍01/" class="article-date">
+	  <time datetime="2017-04-05T15:12:25.000Z" itemprop="datePublished">四月 5, 2017</time>
+	</a>
+
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p> 我们进入根目录下面的theme目录，然后进入hiero主题目，执行下面脚本生成树形文件目录结构<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">find . -print|egrep -v &apos;\.git|\.travis.yml&apos; | sed -e &apos;s;[^/]*/;|____;g;s;____|; |;g&apos;</div></pre></td></tr></table></figure></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div></pre></td><td class="code"><pre><div class="line">.</div><div class="line">|_____config.yml</div><div class="line">|____Gruntfile.js</div><div class="line">|____languages      ##语言配置，默认英文，还有中文，德文，其他</div><div class="line">| |____default.yml  </div><div class="line">| |____en.yml</div><div class="line">| |____zh-CN.yml</div><div class="line">| |____...</div><div class="line">|____layout        ##主题显示布局，主要有两种：_partial 与 _widget</div><div class="line">| |_____partial    ##页面布局的分块，所以叫做partial吧，局部分块的意思,页面显示的主要模块：头部，底部，文章内容区域，评论区域，导航条等</div><div class="line">| | |____after-footer.ejs</div><div class="line">| | |____article.ejs</div><div class="line">| | |____comment.ejs</div><div class="line">| | |____footer.ejs</div><div class="line">| | |____head.ejs</div><div class="line">| | |____...</div><div class="line">| | |____post      ##位于分块下，这里_post管理了一篇文章内容之外的其他部分：类比条，标签条，标题条，导航条，日期条...</div><div class="line">| | | |____category.ejs</div><div class="line">| | | |____date.ejs</div><div class="line">| | | |____nav.ejs</div><div class="line">| | | |____tag.ejs</div><div class="line">| | | |____title.ejs</div><div class="line">| | |____sidebar.ejs</div><div class="line">| | |____tencent-analytics.ejs</div><div class="line">| |_____widget    ##页面挂载的小部件，比如社交信息部件，分类部件，外链模块， 标签云部件，搜索部件。主要都是跟博客文章内容布局相关不大的模块。</div><div class="line">| | |____archive.ejs</div><div class="line">| | |____links.ejs</div><div class="line">| | |____search.ejs</div><div class="line">| | |____social.ejs</div><div class="line">| | |____tag.ejs</div><div class="line">| | |____...</div><div class="line">| |____archive.ejs</div><div class="line">| |____categories.ejs</div><div class="line">| |____category.ejs</div><div class="line">| |____index.ejs   ##网站首页布局</div><div class="line">| |____layout.ejs  ##内容页面布局</div><div class="line">| |____page.ejs</div><div class="line">| |____post.ejs</div><div class="line">| |____search      ##搜索部件布局</div><div class="line">| | |____baidu.ejs</div><div class="line">| | |____index-mobile.ejs</div><div class="line">| | |____index.ejs</div><div class="line">| | |____insight.ejs</div><div class="line">| | |____swiftype.ejs</div><div class="line">| |____tag.ejs     ##标签页面布局</div><div class="line">| |____tags.ejs</div><div class="line">|____LICENSE</div><div class="line">|____package.json  ##node项目定义文件</div><div class="line">|____README.cn.md  ##node项目中文说明</div><div class="line">|____README.md     ##node项目英文说明</div><div class="line">|____scripts       ##依赖的一些脚本</div><div class="line">| |____fancybox.js</div><div class="line">| |____hierarchical-categories.js</div><div class="line">|____source        ##这里跟后端开发项目的理解不一样，前端项目中的source用来管理样式文件，图片，字体等</div><div class="line">| |____css         ##页面分块等样子，引用字体，图片等</div><div class="line">| | |_____extend.styl</div><div class="line">| | |_____partial</div><div class="line">| | |_____util</div><div class="line">| | |_____variables.styl</div><div class="line">| | |____fonts</div><div class="line">| | | |____athemes-glyphs.woff</div><div class="line">| | | |____fontawesome-webfont.eot</div><div class="line">| | | |____...</div><div class="line">| | |____hiero.css  ##hiero主题样式</div><div class="line">| | |____images     ##网站icon</div><div class="line">| | | |____favicon.ico</div><div class="line">| | | |____pose.jpg</div><div class="line">| | | |____rocket.png</div><div class="line">| | |____...</div><div class="line">| |____fancybox     ##优秀的弹出框Jquery插件</div><div class="line">| |____js           ##主题引用等一些脚本</div><div class="line">| | |____bootstrap.js</div><div class="line">| | |____insight.js</div><div class="line">| | |____jquery-3.1.1.min.js</div><div class="line">| | |____main.js</div><div class="line">| | |____script.js</div><div class="line">| | |____...</div><div class="line">| |____preview      ## hiero 一些页面等展示图（效果预览图）</div></pre></td></tr></table></figure>
+
+      
+    </div>
+    <footer class="entry-meta entry-footer">
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+<!-- Table of Contents -->
+
+
+  
     <article id="blog-hiero主题使用剖析"  class="article article-type-blog" itemscope itemprop="blogPost" >
   <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
     
@@ -192,7 +233,7 @@
       
       
   <span class="ico-tags"></span>
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">hexo</a></li></ul>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">hexo</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/云跟帖/">云跟帖</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/评论插件/">评论插件</a></li></ul>
 
       
     </footer>
@@ -511,6 +552,18 @@
               <div class="widget-entry-summary" style="margin: 0;">
             
 
+              <h6 style="margin: 0;"><a href="/2017/04/05/hiero主题介绍01/">hiero主题介绍01</a></h6>
+              <span>四月 5, 2017</span>
+            </div>
+
+          </li>
+        
+          <li class="clearfix">
+
+            
+              <div class="widget-entry-summary" style="margin: 0;">
+            
+
               <h6 style="margin: 0;"><a href="/2017/04/02/hiero主题使用剖析/">hiero主题使用剖析</a></h6>
               <span>四月 2, 2017</span>
             </div>
@@ -565,18 +618,6 @@
 
           </li>
         
-          <li class="clearfix">
-
-            
-              <div class="widget-entry-summary" style="margin: 0;">
-            
-
-              <h6 style="margin: 0;"><a href="/2017/04/01/如何建立个人博客/">如何建立个人博客</a></h6>
-              <span>四月 1, 2017</span>
-            </div>
-
-          </li>
-        
       </ul>
     </div>
   </div>
@@ -596,7 +637,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">标签</h3>
     <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/javascript/">javascript</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/博客/">博客</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/原理/">原理</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/精通控/">精通控</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/评论/">评论</a><span class="tag-list-count">1</span></li></ul>
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/javascript/">javascript</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/云跟帖/">云跟帖</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/博客/">博客</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/原理/">原理</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/精通控/">精通控</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/评论/">评论</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/评论插件/">评论插件</a><span class="tag-list-count">1</span></li></ul>
     </div>
   </div>
 
@@ -606,7 +647,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">标签云</h3>
     <div class="widget tagcloud">
-      <a href="/tags/hexo/" style="font-size: 20px;">hexo</a> <a href="/tags/javascript/" style="font-size: 10px;">javascript</a> <a href="/tags/博客/" style="font-size: 15px;">博客</a> <a href="/tags/原理/" style="font-size: 10px;">原理</a> <a href="/tags/精通控/" style="font-size: 10px;">精通控</a> <a href="/tags/评论/" style="font-size: 10px;">评论</a>
+      <a href="/tags/hexo/" style="font-size: 20px;">hexo</a> <a href="/tags/javascript/" style="font-size: 10px;">javascript</a> <a href="/tags/云跟帖/" style="font-size: 10px;">云跟帖</a> <a href="/tags/博客/" style="font-size: 15px;">博客</a> <a href="/tags/原理/" style="font-size: 10px;">原理</a> <a href="/tags/精通控/" style="font-size: 10px;">精通控</a> <a href="/tags/评论/" style="font-size: 10px;">评论</a> <a href="/tags/评论插件/" style="font-size: 10px;">评论插件</a>
     </div>
   </div>
 
@@ -616,7 +657,7 @@
     <h3 class="widget-title">归档</h3>
 
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/04/">四月 2017</a><span class="archive-list-count">6</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/03/">三月 2017</a><span class="archive-list-count">1</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/04/">四月 2017</a><span class="archive-list-count">7</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/03/">三月 2017</a><span class="archive-list-count">1</span></li></ul>
     </div>
   </div>
 
